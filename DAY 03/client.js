@@ -14,11 +14,12 @@ const callback = function(response) {
     response.on('data', function(data) {
         body = body + data;
     });
+    
     response.on('end', function() {
         console.log('Response from server: ');
         console.log(body);
-    })
+    });
+};
 
-    const req = http.request(options, callback);
-    req.end();
-}
+const req = http.request(options, callback);
+req.end();
