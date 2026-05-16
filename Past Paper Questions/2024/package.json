@@ -1,0 +1,15 @@
+{
+  "name": "cert-verification",
+  "version": "1.0.0",
+  "description": "Certificate Verification System - IT2234",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node data/seed.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0"
+  }
+}
